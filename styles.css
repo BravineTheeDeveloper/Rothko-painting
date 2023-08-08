@@ -1,53 +1,69 @@
 * {
-    overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.canvas {
-    width: 500px;
-    height: 600px;
-    background-color: #4d0f00;
-    overflow: hidden;
-    filter: blur(2px);
-    }
-
-.frame {
-    border: 50px solid black;
-    width: 500px;
-    padding: 50px;
-    margin: 20px auto;
+:root {
+  --dark-gray: #333;
+  --dark-red: #4d0f009a;
+  --yellowish-clr: #efb762;
+  --lighter-red: #b20403;
+  --red: #8f0401;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color:rgb(223, 247, 255) ;
+}
+main {
+  border: 50px solid var(--dark-gray);
+  border-radius: 20px;
+  width: 90%;
+  margin-inline: auto;
+  max-width: 650px;
+}
+section {
+  width: 100%;
+  padding: 30px;
+  background-color: var(--dark-red);
+  overflow: hidden;
+  backdrop-filter: blur(8px);
 }
 
 .one {
-    width: 425px;
-    height: 150px;
-    background-color: #efb762;
-    margin: 20px auto;
-    box-shadow: 0 0 3px 3px #efb762;
-    border-radius: 9px;
-    transform: rotate(-0.6deg);
+  height: 150px;
+  width: 100%;
+  background-color: var(--yellowish-clr);
+  margin: 20px auto;
+  box-shadow: 0 0 3px 3px var(--yellowish-clr);
+  border-radius: 9px;
+  transform: rotate(-0.6deg);
 }
 
 .two {
-    width: 475px;
-    height: 200px;
-    background-color: #8f0401;
-    margin: 0 auto 20px;
-    box-shadow: 0 0 3px 3px #8f0401;
-    border-radius: 8px 10px;
-    transform: rotate(0.4deg);
+  height: 200px;
+  width: 100%;
+  margin: 0 auto 20px;
+  border-radius: 8px 10px;
+  transform: rotate(0.4deg);
+  box-shadow: 0 0 3px 3px var(--red);
+  background-color: var(--red);
 }
 
-.one, .two {
-    filter: blur(1px);
+.one,
+.two {
+  filter: blur(1px);
 }
 
 .three {
-    width: 91%;
-    height: 28%;
-    background-color: #b20403;
-    margin: auto;
-    filter: blur(2px);
-    box-shadow: 0 0 5px 5px #b20403;
-    border-radius: 30px 25px 60px 12px;
-    transform: rotate(-0.2deg);
+  height: 150px;
+  width: 95%;
+  margin-left: auto;
+  filter: blur(2px);
+  background-color: var(--lighter-red);
+  box-shadow: 0 0 5px 5px var(--lighter-red);
+  border-radius: 30px 25px 60px 12px;
+  transform: rotate(-0.2deg);
 }
