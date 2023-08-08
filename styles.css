@@ -1,3 +1,8 @@
+* {
+    overflow-x: hidden;
+    font-size: medium;
+}
+
 .canvas {
     width: 500px;
     height: 600px;
